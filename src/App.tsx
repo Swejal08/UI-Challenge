@@ -81,6 +81,7 @@ export const YearPicker = () => {
       <FontAwesomeIcon
         onClick={() => handleYearChange(-1)}
         icon={faChevronUp}
+        style={{ cursor: "pointer" }}
       />
       <div className="year-lists">
         {years.map((year) => (
@@ -100,6 +101,7 @@ export const YearPicker = () => {
       <FontAwesomeIcon
         onClick={() => handleYearChange(1)}
         icon={faChevronDown}
+        style={{ cursor: "pointer" }}
       />
     </div>
   );
